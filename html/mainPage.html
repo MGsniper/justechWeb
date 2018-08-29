@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justech is not just tech. </title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="../css/mainPage.css">
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function slide() {
+            var eleBtn = document.getElementById("button"),
+                aside = document.getElementById("aside");
+                eleMore=document.getElementById("userBar");
+                display = false;
+            eleBtn.onclick = function() {
+                display = !display;
+                aside.style.width = display? "200px": "20px";
+                eleMore.style.width = display? "200px": "0px";
+                return false;
+            };
+
+        }
+        $(document).ready(function(){
+            $('#myCarousel').carousel({interval:2500});//每隔5秒自动轮播
+        });
+    </script>
+  <style>
+
+  </style>
+</head>
+<body onload="slide()">
+<div class="iContainer">
+    <nav>
+            <div class="logo">
+                <a href="#"></a>
+            </div>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <div class="iRegister">
+                <a href="#"></a>
+            </div>
+            <div class="iLogin">
+                <a href="#"></a>
+            </div>
+        <div class="iSearch">
+            <form>
+                <input type="search" class="search" placeholder=" 搜索">
+            </form>
+        </div>
+    </nav>
+    <div class="main">
+        <aside id="aside">
+           <div class="user" id="userBar">
+                   <table>
+                       <tr><td><img src="../image/icon.png"></td>
+                           <td style="text-align: left"><img src="../image/loginpls.png" alt=""></td>
+                       </tr>
+                   </table>
+                   <ul>
+                       <li><a href="#"></a></li>
+                       <li><a href="#"></a></li>
+                       <li><a href="#"></a></li>
+                       <li><a href="#"></a></li>
+                       <li><a href="#"></a></li>
+                   </ul>
+               <div class="rocket">
+               </div>
+           </div>
+            <div class="btnSide">
+                <div class="userBtn">
+                    <a href="javascript:slide()" id="button"></a>
+                </div>
+            </div>
+        </aside>
+
+        <article>
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="lunbo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lunbo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lunbo">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            <div class="classes">
+
+                <div class="all">
+                    <p>推荐班级</p>
+                    <div class="class1 module">
+                        <ul>
+                            <li></li>
+                            <li>安全工程师</li>
+                            <li> &nbsp;中央已经决定了,你当网安会委员</li>
+                            <li>6324人正在学习</li>
+                        </ul>
+                    </div>
+                    <div class="class2 module">
+                        <ul>
+                            <li></li>
+                            <li>广式传销</li>
+                            <li>&nbsp;人在广西传销,已经跑路失联</li>
+                            <li>???人正在学习</li>
+                        </ul>
+                    </div>
+                    <div class="class3 module">
+                        <ul>
+                            <li></li>
+                            <li>网络工程师</li>
+                            <li>&nbsp;叙利亚电信重建的任务安排上了 </li>
+                            <li>4396人正在学习</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer><p>Copyright &copy; 2004-2018 Justech</p></footer>
+</div>
+</body>
+</html>
