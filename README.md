@@ -1,4 +1,4 @@
 # justechWeb
-这是一个小小的原生html/css页面demo，因为此处的轮播图直接使用了bootstrap的组件，并用JS脚本对其进行了改造，导致浏览器拦截脚本。
-所以，暂时需要允许脚本运行，才能保证网页的正常显示。
-T-T..我会对网页进行深度改造的。
+这是一个小小的原生html/css页面demo。
+opps，因为github目前强制使用https，而原项目的轮播图引用自bootstrap，使用了http头。g更改为https后，目前不再有“混用拦截”的问题了。
+
